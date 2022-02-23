@@ -1,0 +1,855 @@
+:root {
+    --bgColor: #04060c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+html {
+    width: 100vw;
+}
+
+body {
+    background-color: #04060c;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.);
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 15px rgb(202, 160, 221);
+    border-bottom: solid whitesmoke;
+}
+
+.hero {
+    /* background: url(img/heroBackground.jpg) no-repeat; */
+    /* background-size: cover;
+    background-origin: border-box; */
+    /* background-image: url(img/heroBackground.jpg) no-repeat; */
+    height: 72vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 50%;
+}
+
+.logo {
+    margin-top: -0.15rem;
+    margin-left: 4rem;
+    width: 18rem;
+}
+
+.ulNav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 50vw;
+    list-style: none;
+    margin-right: 7rem;
+}
+
+.ulNav > li {
+    color: whitesmoke;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    border-right: solid whitesmoke;
+    padding-right: 1.85rem;
+    
+}
+
+.ulNav > li:nth-child(1) {
+    margin-left: 8rem;
+}
+
+.ulNav > li:nth-child(2) {
+    margin-left: -7.5rem;
+}
+
+.ulNav > li:nth-child(3) {
+    margin-left: -7.5rem;
+}
+
+.ulNav > li:nth-child(4) {
+    border-right: none;
+    margin-left: -8rem;
+}
+
+.ulNav > li:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
+        0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+}
+
+/* Hero Section Begins */
+
+.container {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    width: 40vw;
+    position: absolute;
+    margin-left: -30rem;
+}
+
+.hero > h2 {
+    z-index: 100;
+    color: whitesmoke;
+    margin-top: -21rem;
+    position: absolute;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+
+    animation: neon6 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon6 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
+        0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+    to {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
+        0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+    }
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1rem;
+    line-height: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-top: 5rem;
+    margin-left: -4rem;
+    height: 10vw;
+}
+
+.heroText > h3 {
+    font-weight: lighter;
+    margin-left: 7rem;
+}
+
+.heroText > p {
+    margin-top: 0.5rem;
+    font-weight: lighter;
+    font-size: 90%;
+}
+
+.heroBtn {
+    margin-top: 0.5rem;
+    font-weight: lighter;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 0.2rem;
+    border: solid whitesmoke;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.heroBtn:hover {
+    color: black;
+    background-color: whitesmoke;
+    border: solid purple;
+}
+
+/* hero section ends */
+
+.separator {
+    color: whitesmoke;
+    width: 100vw;
+    height: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid whitesmoke;
+    border-left: none;
+    border-right: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    margin-top: -1rem;
+    z-index: 50;
+}
+
+.separator > h1 {
+
+}
+
+.separator > h1 > span {
+    color: purple;
+    letter-spacing: 0.1rem;
+}
+
+
+
+/* Retrofun section begins */
+.arcade {
+    width: 10%;
+    position: absolute;
+    z-index: 60;
+    margin-top: -1rem;
+    margin-right: 60vw;
+}
+
+.about {
+    background-color: #04060c;
+    height: 115vh;
+    overflow-y: hidden;
+    position: relative;
+    background-image: url(img/pinballBg.jpg);
+    background-size: cover;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.96);
+
+}
+
+
+.pinballBg {
+    width: 100%;
+    z-index: -1;
+    opacity: 0.06;
+}
+
+.aboutContainer {
+    position: relative;
+    width: 98%;
+    height: 98%;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.aboutCard {
+    width: 60rem;
+    height: 15rem;
+    background-color: rgba(71, 61, 139, 0.699);
+    display: flex;
+    justify-content: start;
+    border-radius: 0.7rem;
+}
+
+.aboutContainer > div:nth-child(1) {
+    color: whitesmoke;
+    margin-right: -19rem;
+    margin-top: 3rem;
+    margin-bottom: -1rem;
+}
+
+.aboutContainer > div:nth-child(2) {
+    color: whitesmoke;
+    margin-left: -21rem;
+    margin-top: -1rem;
+
+}
+
+.imgAboutContainer {
+    width: 95%;
+    overflow: hidden;
+    border-radius: 2.3rem;
+    border: 2px solid black;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-right: 1.45rem;
+}
+
+.imgAboutContainer > img:hover {
+    transform: scale(1.1);
+    transition: 0.5s linear;
+}
+
+.aboutContainer > .aboutCard:nth-child(1) > .imgAboutContainer {
+    margin-right: 2rem;
+}
+
+.aboutContainer > .aboutCard:nth-child(2) > .imgAboutContainer {
+    margin-left: 2rem;
+}
+
+#arcadeAbout {
+    margin-top: -2.8rem;
+    width: 115%;
+    opacity: 0.9;
+}
+
+#flipperAbout {
+    height: 120%;
+    margin-top: -1.2rem;
+    opacity: 0.9;
+}
+
+
+.aboutTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aboutTextContainer > h4 {
+    margin: 0 auto;
+    margin-top: 1rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+    font-size: 135%;
+    margin-bottom: -0.5rem;
+}
+
+.aboutTextContainer > p {
+    padding: 1rem;
+    line-height: 1.45rem;
+    letter-spacing: 0.1rem;
+    font-weight: lighter;
+    opacity: 0.85;
+    margin-left: 1rem;
+    margin-top: -0.5rem;
+    
+}
+
+
+ /* About section begins */
+
+
+.retroWave {
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.tetris {
+    width: 12%;
+    position: absolute;
+    z-index: 60;
+    margin-top: -1rem;
+    margin-left: 60vw;
+}
+
+/*  */
+
+.contact {
+    background-color: #04060c;
+    height: 100vh;
+    overflow-y: hidden;
+    background-image: url(img/retroGame.jpg)  ;
+    background-size: cover;
+    background-position: center 57%;
+}
+
+#contactSep {
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+
+/* .retroGame {
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    
+}    */
+
+
+body::-webkit-scrollbar {
+    width: 0.62rem;
+    height: 8px;
+  }
+
+::-webkit-scrollbar-track-piece {
+    background-color: rgba(80, 46, 74, 0.5);
+}
+   
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(85, 85, 85);
+    outline: 2px solid slategrey;
+    border-radius: 0.2rem;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.658);
+    border-radius: 0.2rem;
+}
+
+
+.formDiv {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 17rem;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    margin-top: 0.3rem;
+    margin-right: -15rem;
+
+}
+
+.form > input {
+    border-radius: 0.2rem;
+    border: 0.5px solid rgba(0, 0, 0, 1);
+    height: 2rem;
+    padding-left: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.719);
+}
+
+.form > textarea {
+    resize: none;
+    border: 0.5px solid rgba(0, 0, 0, 1);
+    border-radius: 0.2rem;
+    padding-top: 0.2rem;
+    padding-left: 0.3rem;
+    background-color: rgba(255, 255, 255, 0.719);
+}
+
+.form > h4 {
+    color: black;
+    margin: 0 auto;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    font-size: 85%;
+}
+
+.form > label {
+    color: black;
+    margin: 0.1rem 0 -0.2rem 0;
+    padding: 0 0 0 1%;
+    letter-spacing: 0.1rem;
+    line-height: 1.5rem;
+}
+
+.form > p {
+    color: black;
+    margin: 0 auto;
+    
+}
+
+.btn {
+    color: whitesmoke;
+    background-color: #04060c;
+    border-radius: 0.2rem;
+    border: solid black;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: darkslateblue;
+    border: solid darkslateblue;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.heroBtn2 {
+    color: whitesmoke;
+    background-color: rgba(71, 61, 139, 0.671);
+    border: solid rgba(71, 61, 139, 0.637);
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.heroBtn2:hover {
+    background-color: darkslateblue;
+    border: solid darkslateblue;
+    color: whitesmoke;
+    cursor: pointer;
+    transform: scaleX(1.01);
+    transition: scaleX 0.1s linear;
+}
+
+.formContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer > aside {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#tetris {
+    width: 12rem;
+    margin-bottom: -10rem;
+    margin-left: 25rem;
+    position: absolute;
+    z-index: 10;
+    opacity: 0.9;
+}
+
+
+aside > h2 {
+    margin-top: -22rem;
+    position: absolute;
+    margin-bottom: -2rem;
+    margin-left: 28rem;
+    z-index: 10;
+    width: 26rem;
+    color: whitesmoke;
+    letter-spacing: 0.1rem;
+    animation: neon6 5s ease-in-out infinite alternate;
+    opacity: 0.97;
+}
+
+aside > p {
+    margin-top: -12rem;
+    position: absolute;
+    text-align: center;
+    margin-bottom: -2rem;
+    margin-left: 27rem;
+    width: 30rem;
+    z-index: 10;
+    color: whitesmoke;
+    line-height: 1.5rem;
+}
+
+.contactContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+
+.contactForm {
+    margin-top: 8.2vh;
+    width: 100%;
+    height: 80vh;
+}
+
+.arcadeLogo {
+    width: 15%;
+    position: absolute;
+    z-index: 60;
+    margin-top: -2.5rem;
+    margin-left: 53vw;
+    opacity: 0.99;
+}
+
+.footer {
+    width: 100%;
+    position: absolute;
+    height: 20vh;
+    background-color: var(--bgColor);
+    z-index: 80;
+    margin-top: 36.5rem;
+    border-top: 0.1rem solid whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer > h3 {
+    color: whitesmoke;
+    letter-spacing: 0.1rem;
+    margin-left: 2.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    opacity: 0.85;
+}
+
+.logoContainer {
+ 
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-right: 8rem;
+}
+
+.footer > h4 {
+    color: whitesmoke;
+    letter-spacing: 0.1rem;
+    margin-right: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    opacity: 0.8;
+}
+
+.footer > h4 > span {
+    color:rgb(83, 74, 139);
+    font-size: 110%;
+    cursor: pointer;
+}
+
+.footer > h4 > span:hover {
+    color: rgb(158, 140, 196);
+}
+
+
+#logoNet {
+    margin-top: 1.5rem;
+    color:  rgba(217, 208, 238, 0.925);
+    font-size: 250%;
+    cursor: pointer;
+}
+
+#logoNet:hover {
+    color:rgb(83, 74, 139);
+    transform:rotate(-20deg);
+    animation-direction: alternate-reverse;
+    transition: 1s ease-in-out;
+}
+
+
+#footer > h5 {
+    position: absolute;
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110%;
+    font-weight: lighter;
+    margin-left: 45.5%;
+    margin-top: -4rem;
+    letter-spacing: 0.1rem;
+    opacity: 0.9;
+    
+}
+
+/* Games Section Begins */
+
+
+.ghost {
+    width: 12%;
+    position: absolute;
+    z-index: 60;
+    margin-top: -1rem;
+    margin-left: 60vw;
+}
+
+.games {
+    background-color: #04060c;
+    position: relative;
+    height: 115vh;
+    overflow-y: hidden;
+    background-image: url(img/pacman.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+
+.games::before  {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.95)
+}
+
+/* .pacman {
+   width: 100%;
+   z-index: -1;
+   opacity: 0.05;
+   position: absolute;
+} */
+
+.hearts {
+    width: 18rem;
+    position: absolute;
+    margin-right: -62.5rem;
+    margin-top: -5.5rem;
+}
+
+.gamesContainer {
+    position: relative;
+    width: 96%;
+    height: 70%;
+    margin: auto;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gameCard {
+    width: 25%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    background-color: rgba(36, 32, 68, 0.658);
+    margin-top: 1.2rem;
+}
+
+.divImg {
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 1rem;
+    border: 1px solid;
+}
+
+.img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s linear;
+}
+
+#img1 {
+    margin-top: -10.5rem;
+    width: 35rem
+}
+
+#img2 {
+    width: 40rem;
+    margin-top: -7rem;
+    margin-left: -12rem;
+}
+
+#img3 {
+    width: 25rem;
+    margin-top: -3rem;
+    margin-left: -2.5rem;
+}
+
+#img4 {
+    margin-top: -6rem;
+    margin-left: -6rem;
+}
+
+
+.gameCard > h3 {
+    letter-spacing: 0.1rem;
+    color: rgba(245, 245, 245, 0.911);
+}
+
+.gameCard > p {
+    margin: 0 0.5rem;
+    line-height: 1.4rem;
+    text-align: center;
+    color: rgba(245, 245, 245, 0.829);
+}
+
+.gameCard > button {
+    border-radius: 0.2rem;
+    padding: 0.8rem;
+    width: 90%;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: rgba(47, 79, 79, 0.842);
+    color: whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.gameCard > button:hover {
+    transform: scale(1.02);
+    transition: scale 1s linear;
+    background-color: rgb(68, 116, 116);
+}
+
+@media (min-width: 1500px)  {
+    :root {
+        font-size: 1.5rem;
+    }
+
+    .aboutContainer > .aboutCard:nth-child(1) {
+        margin-left: 1.5rem;
+    }
+
+    .hearts {
+        margin-left: -4rem;
+    }
+
+    #img1 {
+        margin-top: -13.2rem;
+    }
+
+    #img2 {
+        margin-top: -9rem;
+    }
+
+    #img3 {
+        margin-left: -2.5rem;
+        margin-top: -6rem;
+    }
+
+    #img4 {
+        margin-left: -1rem;
+        margin-top: -2.1rem;
+    }
+}
+
